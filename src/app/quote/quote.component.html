@@ -3,14 +3,17 @@
     <hr>
     <h6>Home to every quote.</h6>
     <hr>
-    <div *ngFor='let quote of quotes'>
-    <p>
-    {{quote.id}}.
-    {{quote.author}}
-    <br>
-    {{quote.quote}}
+    <div *ngFor='let quote of quotes let i = index' >
+    <p ng-repeat="quote in quotes">
+    <app-quote-structure [quote] = 'quote'></app-quote-structure>
     
     </p>
-    
+    <div>
+      <p>
+      
+        
+      </p>
+    </div>
+      
     </div>
   </div>

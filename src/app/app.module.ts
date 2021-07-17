@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteStructureComponent } from './quote-structure/quote-structure.component';
+import { PublishDatePipe } from './publish-date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteStructureComponent
+    QuoteStructureComponent,
+    PublishDatePipe
   ],
   imports: [
     BrowserModule,

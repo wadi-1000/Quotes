@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 import { Quote } from '../Quote';
 
 @Component({
@@ -7,7 +7,9 @@ import { Quote } from '../Quote';
   styleUrls: ['./quote-structure.component.css']
 })
 export class QuoteStructureComponent implements OnInit {
-  @Input() quote: Quote = new Quote(0, '', '');
+  @Input() quote: Quote = new Quote(0, '', '', new Date);
+ 
+ 
   constructor() { }
 
   ngOnInit(): void {
