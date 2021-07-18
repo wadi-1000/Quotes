@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteStructureComponent } from './quote-structure/quote-structure.component';
 import { PublishDatePipe } from './publish-date.pipe';
+import { QuoteInputFormComponent } from './quote-input-form/quote-input-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteStructureComponent,
-    PublishDatePipe
+    PublishDatePipe,
+    QuoteInputFormComponent
   ],
   imports: [
     BrowserModule,
