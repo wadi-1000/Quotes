@@ -7,6 +7,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteStructureComponent } from './quote-structure/quote-structure.component';
 import { PublishDatePipe } from './publish-date.pipe';
 import { QuoteInputFormComponent } from './quote-input-form/quote-input-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { QuoteInputFormComponent } from './quote-input-form/quote-input-form.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,23 @@
+<body>
 <div>
     <h1>Welcome to Quota!</h1>
-    <hr>
     <h6>Home to every quote.</h6>
-    <hr>
+    <div class="container-md">
     <div *ngFor='let quote of quotes let i = index' >
     <p ng-repeat="quote in quotes">
       <p>{{quote.quote}}
         <br>
         ~{{quote.author}}
     <br>
-    <button (click)='toggleDetails(i)'>More</button>
+    <button (click)='toggleDetails(i)'> See more</button>
     <app-quote-structure *ngIf='quote.showSubmitDate' [quote]='quote' (publishDate) = 'deleteQuote($event,i)'></app-quote-structure>
-    </p>
- 
-    </div>
-  </div>
+</p>
+</div>
+</div>
+    <br>
+</div>
+  
+  <div class="col-md-6">
+    <app-quote-input-form (addQuote)="addNewQuote($event)"></app-quote-input-form>
+</div>
+</body>

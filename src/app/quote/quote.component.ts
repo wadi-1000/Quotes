@@ -19,6 +19,7 @@ export class QuoteComponent implements OnInit {
      new Quote (9, 'Stephen Hawking', 'Life would be tragic if it weren’t funny.',new Date(2021,3,29)),
      new Quote (10,'Emily Dickinson', 'Forever is composed of nows.',new Date(2021,11,13)),
      new Quote (11, 'Wendy Muhoho','The biggest motivator in life is yourself.',new Date(2021,10,18)),
+     new Quote (12, 'Natalie Nyawira','Be yourself.', new Date(2020,18,7))
 
   ];
   toggleDetails(index:any){
@@ -41,6 +42,12 @@ export class QuoteComponent implements OnInit {
   }
 
 
+  addNewQuote(quote:any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.publishDate = new Date(quote.publishDate)
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit(): void {
