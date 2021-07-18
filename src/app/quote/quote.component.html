@@ -7,10 +7,10 @@
     <p ng-repeat="quote in quotes">
       <p>{{quote.quote}}
         <br>
-        {{quote.author}}
+        ~{{quote.author}}
     <br>
     <button (click)='toggleDetails(i)'>More</button>
-    <app-quote-structure *ngIf='quote.showSubmitDate' [quote]='quote' (publishDate) = 'quoteComplete($event,i)'></app-quote-structure>
+    <app-quote-structure *ngIf='quote.showSubmitDate' [quote]='quote' (publishDate) = 'deleteQuote($event,i)'></app-quote-structure>
     </p>
  
     </div>

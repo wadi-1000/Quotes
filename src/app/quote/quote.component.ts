@@ -30,6 +30,15 @@ export class QuoteComponent implements OnInit {
       this.quotes.splice(index,1);
     }
   }    
+  deleteQuote(publishDate:any, index:any){
+    if (publishDate) {
+      let toDelete = confirm(`Are you sure you want to delete  the quote"${this.quotes[index].quote}" ~ ${this.quotes[index].author}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
 
 
   constructor() { }

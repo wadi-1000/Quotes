@@ -14,6 +14,10 @@ export class QuoteStructureComponent implements OnInit {
   quoteComplete(complete:boolean){
     this.publishDate.emit(complete);
   }
+
+  quoteDelete(complete:boolean){
+    this.publishDate.emit(complete);
+  }
   constructor() { }
 
   ngOnInit() {
