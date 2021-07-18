@@ -9,10 +9,17 @@ import { Quote } from '../Quote';
 export class QuoteStructureComponent implements OnInit {
   @Input() quote: Quote = new Quote(0, '', '', new Date);
  
- 
+  @Output() publishDate = new EventEmitter<boolean>();
+
+  quoteComplete(complete:boolean){
+    this.publishDate.emit(complete);
+  }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
+  
+
+

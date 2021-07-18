@@ -21,14 +21,16 @@ export class QuoteComponent implements OnInit {
      new Quote (11, 'Wendy Muhoho','The biggest motivator in life is yourself.',new Date(2021,10,18)),
 
   ];
-
+  toggleDetails(index:any){
+    this.quotes[index].showSubmitDate = !this.quotes[index].showSubmitDate;
+  }
     
-    
-  deleteQuote( index:any){
-    if (Quote) {
+  quoteComplete(publishDate:any, index :any){
+    if (publishDate) {
       this.quotes.splice(index,1);
     }
-  }
+  }    
+
 
   constructor() { }
 
@@ -36,7 +38,5 @@ export class QuoteComponent implements OnInit {
   }
 
 }
-function arrayRemove(Quotes: any, quotes: any) {
-  throw new Error('Function not implemented.');
-}
+
 
