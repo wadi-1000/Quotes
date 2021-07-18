@@ -9,3 +9,9 @@ p{
     text-align: justify;
     text-decoration: linen;
 }
+.upvote{
+    background-color: darkgreen;
+}
+.downvote{
+    background-color: darkred;
+}

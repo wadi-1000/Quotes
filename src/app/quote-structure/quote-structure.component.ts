@@ -18,6 +18,14 @@ export class QuoteStructureComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.publishDate.emit(complete);
   }
+  numberOfVotes :number = (0);
+
+  upVoteButtonClick(){
+this.numberOfVotes++;
+  }
+  downVoteButtonClick(){
+    this.numberOfVotes--;
+  }
   constructor() { }
 
   ngOnInit() {

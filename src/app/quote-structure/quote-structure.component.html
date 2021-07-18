@@ -1,5 +1,13 @@
 
 <p>
+    
+    <button (click)= "upVoteButtonClick()" class="upvote">👍</button>
+
+    {{numberOfVotes}}
+    <button (click)= "downVoteButtonClick()" class="downvote">👎</button>
+
+    
+<br>
     submitted on {{quote.submitDate|date}}
     <br>
     published on {{quote.submitDate|date|publishDate}} days
