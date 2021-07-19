@@ -1,35 +1,58 @@
-# Quotes
+# Quota
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
-
-## Creator
-
-Joy Zawadi
+### Written By: [Joy Kiranga](https://github.com/wadi-1000)
 
 ## Description
 
-The app allows users to view quotes, input quotes, delete quotes and even upvote or downvote a quote.
+Quota is a web app that allows a user to view quotes, vote on a quote, delete quotes and even creating quotes.
+Try it now.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+-  A form to create a quote.
 
-## Code scaffolding
+-  Quotes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Known Bugs
 
-## Running unit tests
+-  The only bug is the submit date counts days from the coming days not the past days.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Behavoiur Driven Development
 
-## Running end-to-end tests
+-  Click See More on a quote to see more details.
+-  Click the thumbs up button to upvote on a quote.
+-  Click the thumbs down button to downvote a quote.
+-  Click Delete Quote to delete a quote.
+-  Input quote in the create quote form.
+-  Input author of quote in the create quote form.
+- Click Add Quote to add a quote.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Setup/Installation Requirements
 
-## Further help
+-  -- git clone [your repository name]
+-  -- cd [your repository name]
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Prerequisites
+
+1 A text editor preferable to install Visual Studio Code.
+
+2 Google Chrome
+
+### Technologies Used
+
+-  HTML
+-  CSS
+-  BOOTSTRAP
+-  Angularjs
+
+### Support and contact details
+
+If any problems arise contact me at:
+
+-  [email](jk.mk@gmail.com)
+
+### License
+
+[Here] (https://raw.githubusercontent.com/wadi-1000/Quotes/master/LICENSE)
