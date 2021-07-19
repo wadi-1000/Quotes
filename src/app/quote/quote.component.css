@@ -31,7 +31,6 @@ p:hover {
 }
 
 p {
-  margin: 0px;  
   color: darkslategray;
   
 }
@@ -50,4 +49,13 @@ p {
   }
   .container{
       justify-content: center;
+      
+  }
+  .hero-image {
+    /* background-image:  url(""); */
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
